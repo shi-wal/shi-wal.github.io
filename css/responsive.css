@@ -76,33 +76,47 @@
   
 .main{
   background-image: linear-gradient(to left, #ffffff 65%, #c2f6ef 35%);
-  height: 1000px;
+  height: 1020px;
 }
 .main .textside{
   padding-bottom: 20px;
 }
 .skills-content{
-  height: 550px;
+  height: 560px;
   background-image: linear-gradient(to right, #ffffff 65%, #c2f6ef 35%);
 }
 }
 
 @media only screen and (max-width: 460px){  
-  main{
-    height: 1040px;
+  .main{
+    height: 1200px;
     background-image: linear-gradient(to left, #ffffff 65%, #c2f6ef 35%);
+      }
+    .main .textside{
+          padding-left: 20px;
+      }
+      .textside p{
+          text-align: left;
+          font-size: 18px;
+      }
+      .skills{
+          height: 740px;
       }
       .skills-content{
         flex-direction: column;
+        height: 620px;
       }
       .skills .skills-content .right .text{
-        font-size: 19px;
+        font-size: 28px;
     }
+    .skills .skills-content .right p{
+      font-size: 18px;
+  }
       
   }
   @media only screen and (max-width:400px){
-      main{
-          height: 1100px;
+      .main{
+          height: 1230px;
       }
       .textside p{
         text-align: left;
@@ -111,18 +125,18 @@
         margin-top: 40px;
       }
       .skills .skills-content .left{
-        padding-top: 100px;
+        padding-top: 60px;
       }
       .skills{
-        height: 700px;
+        height: 760px;
       }
       .skills .skills-content{
-        height: 550px;
+        height: 640px;
       }
   }
   @media only screen and (max-width:360px){
-    main{
-        height: 1120px;
+    .main{
+        height: 1260px;
     }
     .textside p{
       text-align: left;
@@ -131,24 +145,25 @@
       margin-top: 40px;
     }
     .skills .skills-content .left{
-      padding-top: 150px;
+      padding-top: 100px;
     }
     .skills{
-      height: 710px;
+      height: 860px;
     }
     .skills .skills-content{
-      height: 590px;
+      height: 670px;
     }
 }
 @media only screen and(max-width:340px){
   .main{
-    height: 1150px;
+    height: 1310px;
   }
   .skills{
-    height: 800px;
+    height: 870px;
   }
   .skills .skills-content{
-    height: 630px;
+    height: 700px;
   }
 }
+
 
