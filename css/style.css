@@ -123,12 +123,12 @@ body{
 .textside h4{
     padding: 50px 0 0 40px;
     font-variant: small-caps;
-    
+    font-size: 28px;
 }
 .textside p{
     padding: 10px 0 20px 40px;
     text-align: justify;
-    
+    font-size: 18px;
 }
 .picarea{
     display: flex;
@@ -175,9 +175,8 @@ body{
     padding-right: 80px;
 }
 .skills .skills-content .right .text{
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 600;
-    font-variant: small-caps;
     margin-bottom: 10px;
 }
 .skills .skills-content .right p{
@@ -296,77 +295,5 @@ body{
 .social-menu ul li:nth-child(6) a:hover {
     background-color: #0077B5;
 }
- 
-
-
-
-/* .toggle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 80px;
-    width: 80px;
-}
-.toggle span{
-    display: block;
-    width: 60px;
-    height: 6px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #000000;
-    transition: .5s;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.50);
-}
-.toggle span:nth-child(1){
-    transform: translate(-50%,-50%) translateY(-20px);
-    transition: .2s;
-}
-.toggle span:nth-child(4){
-    transform: translate(-50%,-50%) translateY(20px);
-    transition: .2s;
-}
- .toggle:active span:nth-child(1){
-    transform: translate(-50%,-50%) translateY(-35px);
-    opacity: 0;
-}
-.toggle:active span:nth-child(4){
-    transform: translate(-50%,-50%) translateY(35px);
-    opacity: 0;
-}
-.toggle:active span:nth-child(2){
-    transform: translate(-50%,-50%) rotate(45deg);
-   transition-delay: 1s;
-}
-.toggle:active span:nth-child(3){
-    transform: translate(-50%,-50%) rotate(-45deg);
-    transition-delay: 1s;
-  }  */
-
- 
-/* .header-logo-desc{
-    display: inline-block;
-    white-space: nowrap;
-    font-size: 31px;
-    line-height: 37px;
-    font-weight: 400;
-    color: rgb(255, 255, 255);
-    visibility: inherit;
-    transition: none;
-    border-width: 0px;
-    margin: 0 0 0 20px;
-    padding-right: 20px;
-    letter-spacing: 0px;
-    min-height: 0px;
-    min-width: 0px;
-    max-height: none;
-    max-width: none;
-    opacity: 1;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform-origin: 50% 50% 0px;
-} */
-
 
 
