@@ -433,6 +433,9 @@
       .description{
         margin-top: 60px;
       }
+      .aboutInfo{
+        width: 93% !important;
+      }
       .aboutInfo span{
         padding: 10px 0 10px 5px;
         font-size: 16px;
