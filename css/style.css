@@ -123,12 +123,12 @@ body{
 .textside h4{
     padding: 50px 0 0 40px;
     font-variant: small-caps;
-    
+    font-size: 28px;
 }
 .textside p{
     padding: 10px 0 20px 40px;
     text-align: justify;
-    
+    font-size: 18px;
 }
 .picarea{
     display: flex;
@@ -136,15 +136,163 @@ body{
 }
 .img{
      transition: all 0.3s ease-in-out;
-     height:400px; 
-     width:400px;
+     height:440px; 
+     width:440px;
    }
 .img:hover{
     transform: rotate(0deg) skew(0deg) translate(-5px, -20px);
-    height: 405px;
-    width: 405px;
+    height: 445px;
+    width: 445px;
 }
 /* about end */
+.description{
+    margin-top: 90px;
+}
+.description .title h1::before{
+    width: 280px;
+    height: 4px;
+}
+
+.description .title h1::after{
+    content: "Something More:";
+    font-size: 25px;
+}
+.aboutInfo{
+    /* margin: 10px; */
+    padding: 10px;
+    background-color: #474747;
+    height: 400px;
+    border: 3px solid #74bdb3;
+    border-radius: 20px;
+    overflow: auto;
+    box-shadow: 0 20px 30px rgba(109, 109, 110, 0.4);
+}
+.aboutInfo .details span{
+    color: #74bdb3;
+    font-weight: bold;
+    font-size: 16px;
+}
+.aboutInfo::-webkit-scrollbar {
+    width: 14px;
+    scroll-behavior: smooth;
+  }
+  
+  /* Track */
+  .aboutInfo::-webkit-scrollbar-track {
+    background: rgb(148, 148, 148);
+    border-radius: 15px;
+  }
+  
+  /* Handle */
+  .aboutInfo::-webkit-scrollbar-thumb {
+      border-radius: 15px;
+    background:  #666666;
+  }
+  
+  /* Handle on hover */
+  .aboutInfo::-webkit-scrollbar-thumb:hover {
+    background:  #5c5c5c; 
+  }
+.aboutInfo span{
+    padding: 40px;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+.aboutInfo .btnstyle{
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        padding: 4px 20px;
+        float: right;
+        margin: 0 60px;
+}  
+
+/* education starts here */
+.education{
+    margin-top: 90px;
+}
+.education .title h1{
+    margin-bottom: 10px;
+}
+.education .title h1::before{
+    width: 220px;
+    height: 4px;
+}
+.education .title h1::after{
+    content: "Education:";
+    font-size: 30px;
+}
+.timeline{
+    margin-top: 25px;
+  }
+.timeline-content {
+    position: relative;
+    padding: 5px 0;
+  }
+  .timeline-content:last-child:before {
+    height: 0;
+  }
+  .timeline-content:before {
+    content: "";
+    background: #58585f;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+  }
+  
+  .timelineIcon {
+    background: #58585f;
+    border-radius: 100%;
+    position: absolute;
+    left: 47.55%;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+  }
+  .timelineIcon i {
+    color: #ffffff;
+    font-size: 32px;
+    display: block;
+    line-height: 70px;
+  }
+  
+  .education-info{
+    display: inline-block;
+    vertical-align: top;
+    max-width: 300px;
+    background-color: #58585f;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  .even{
+    margin-left: 24%;
+    margin-top: 25px;
+    border-radius: 20px 0px 20px 20px;
+  }
+  .odd{
+    margin-left: 53.5%;
+    border-radius: 0px 20px 20px 20px;
+  }
+  .education-info p{
+    color: rgb(197, 214, 214);
+  }
+ .comma{
+   font-size: 18px;
+   color:rgb(151, 188, 223) ;
+ }
+  .education-info small {
+    color: rgb(151, 188, 223);
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 15px;
+  }
+
 
 /* skills start */
 .skills{
@@ -175,9 +323,8 @@ body{
     padding-right: 80px;
 }
 .skills .skills-content .right .text{
-    font-size: 30px;
+    font-size: 32px;
     font-weight: 600;
-    font-variant: small-caps;
     margin-bottom: 10px;
 }
 .skills .skills-content .right p{
@@ -217,9 +364,12 @@ body{
   
 }
 .skills-content .left .html::before{
-    width: 90%;
+    width: 95%;
 }
 .skills-content .left .css::before{
+    width: 75%;
+}
+.skills-content .left .bstrap::before{
     width: 70%;
 }
 .skills-content .left .js::before{
@@ -228,7 +378,7 @@ body{
 .skills-content .left .php::before{
     width: 50%;
 }
-.skills-content .left .mysql::before{
+.skills-content .left .py::before{
     width: 65%;
 }
 
@@ -296,77 +446,5 @@ body{
 .social-menu ul li:nth-child(6) a:hover {
     background-color: #0077B5;
 }
- 
-
-
-
-/* .toggle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    height: 80px;
-    width: 80px;
-}
-.toggle span{
-    display: block;
-    width: 60px;
-    height: 6px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #000000;
-    transition: .5s;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.50);
-}
-.toggle span:nth-child(1){
-    transform: translate(-50%,-50%) translateY(-20px);
-    transition: .2s;
-}
-.toggle span:nth-child(4){
-    transform: translate(-50%,-50%) translateY(20px);
-    transition: .2s;
-}
- .toggle:active span:nth-child(1){
-    transform: translate(-50%,-50%) translateY(-35px);
-    opacity: 0;
-}
-.toggle:active span:nth-child(4){
-    transform: translate(-50%,-50%) translateY(35px);
-    opacity: 0;
-}
-.toggle:active span:nth-child(2){
-    transform: translate(-50%,-50%) rotate(45deg);
-   transition-delay: 1s;
-}
-.toggle:active span:nth-child(3){
-    transform: translate(-50%,-50%) rotate(-45deg);
-    transition-delay: 1s;
-  }  */
-
- 
-/* .header-logo-desc{
-    display: inline-block;
-    white-space: nowrap;
-    font-size: 31px;
-    line-height: 37px;
-    font-weight: 400;
-    color: rgb(255, 255, 255);
-    visibility: inherit;
-    transition: none;
-    border-width: 0px;
-    margin: 0 0 0 20px;
-    padding-right: 20px;
-    letter-spacing: 0px;
-    min-height: 0px;
-    min-width: 0px;
-    max-height: none;
-    max-width: none;
-    opacity: 1;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transform-origin: 50% 50% 0px;
-} */
-
 
 

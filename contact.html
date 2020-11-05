@@ -88,27 +88,28 @@
     </div>
     <div class="container w-70" style="margin-bottom: 40px;">
 
-        <form method="post" autocomplete="off">
+        <form autocomplete="off">
             <div class="form-group">
                 <label for="name">Name*</label>
-                <input type="text" class="form-control" name="name" required>
+                <input type="text" class="form-control" name="name" id="name" required>
             </div>
             <div class="form-group">
                 <label for="mail">Email address*</label>
-                <input type="email" class="form-control" name="mail" placeholder="For E.g- name@example.com" required>
+                <input type="email" class="form-control" name="mail" id="mail" placeholder="For E.g- name@example.com" required>
             </div>
             <div class="form-group">
                 <label for="subject">Subject</label>
-                <input type="text" class="form-control" name="subject">
+                <input type="text" class="form-control" name="subject" id="subject">
             </div>
 
             <div class="form-group">
                 <label for="msg">Message*</label>
-                <textarea class="form-control" name="msg" rows="3" placeholder="Leave your message here!"
+                <textarea class="form-control" name="msg" id="msg" rows="3" placeholder="Leave your message here!"
                     required></textarea>
             </div>
-            <a href="contact.html" class="btnstyle" type="submit">Submit</a>
+           
         </form>
+        <button class="btnstyle" onclick="sendingData(name,mail,subject,msg)" type="submit">Submit</button>
 
     </div>
 
@@ -141,6 +142,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>

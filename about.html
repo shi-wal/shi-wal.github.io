@@ -16,9 +16,42 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <style>
-            body {
+    <style>
+        body {
             font-family: 'Baloo 2', cursive;
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: aliceblue;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: rgb(33, 44, 21);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
         }
     </style>
 </head>
@@ -27,7 +60,7 @@
     <div style="height: 55px;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="opacity: 0.9;">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div>
@@ -39,7 +72,14 @@
                         <a class="nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="about.html">ABOUT</a>
+                        <div class="dropdown">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                            <div class="dropdown-content">
+                                <a href="#introduction">Introduction</a>
+                                <a href="#education">Education</a>
+                                <a href="#skills">Skills</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="project.html">PROJECTS</a>
@@ -49,8 +89,8 @@
                         <a class="nav-link " href="contact.html">VIRTUAL MEET</a>
                     </li>
                 </ul>
-                
-                <a class="btn btn-outline-warning btn1" role="button" href="https://www.confessout.com/SAgrawal">Wanna
+
+                <a class="btn btn-outline-info btn1" role="button" href="https://www.confessout.com/SAgrawal">Wanna
                     Confess Something?</a>
 
             </div>
@@ -65,8 +105,9 @@
                 <h4>"Eruliaf, You Made Me A Believer!"</h4>
                 <h1>Want to Know About Me?</h1>
                 <h5 class="texts">I'm a <span class="typing"> </span></h5>
-               <p><span>Hey seeker! It's my pleasure to see you here! </span><br><span> Well, I'm Shivangi Agrawal,
-                    born & raised at Ganjdundwara,
+                <p><span>Hey seeker! It's my pleasure to see you here! </span><br><span> Well, I'm <span
+                            style="font-weight: bold;">Shivangi Agrawal</span>,
+                        born & raised at Ganjdundwara,
                         Kasganj. I'm currently pursuing my B.tech. in Computer Science & Engineering and expect to
                         be graduated
                         in 2021.
@@ -74,27 +115,121 @@
                         web development is also the part of my career enhancement. From beginning of my coding journey,
                         I've
                         worked in python & have a basic knowledge of Machine Learning algorithms.</span> </p>
-                        
+
                 <a href="mailto:shivangiagrawal667@gmail.com" class="btnstyle" style="margin: 5px 40px;">Download CV</a>
             </div>
             <div class="col-lg-5 col-md-5 col-12 picarea">
                 <img src="images/owner (2).jpg" style="box-shadow: 5px 10px 8px rgba(61, 60, 60, 0.7);"
-                alt="Owner's Image" class="img-fluid rounded-circle img">
+                    alt="Owner's Image" class="img-fluid rounded-circle img">
             </div>
         </div>
     </section>
-    
-    <section class="skills">
+
+    <section class="description" id="introduction">
+        <div class="title">
+            <h1></h1>
+        </div>
+        <div class="container aboutInfo">
+            <br>
+            <span>>>> &nbsp;print(shivangi.homeland);</span>
+            <button class="ml-auto btnstyle" id="homeland" onclick="myfunction('homeland',0)">Run</button>
+            <span class="details"></span>
+            <br><br>
+            <span>>>> &nbsp;print(shivangi.work);</span>
+            <button class="btnstyle" id="work" onclick="myfunction('work',1)">Run</button>
+            <span class="details"></span>
+            <br><br>
+            <span>>>> &nbsp;print(shivangi.favSubject);</span>
+            <button class="btnstyle" id="favSub" onclick="myfunction('favSub',2)">Run</button>
+            <span class="details"></span>
+            <br><br>
+            <span>>>> &nbsp;print(shivangi.strength);</span>
+            <button class="btnstyle" id="strength" onclick="myfunction('strength',3)">Run</button>
+            <span class="details"></span>
+            <br><br>
+            <span>>>> &nbsp;print(shivangi.weakness);</span>
+            <button class="btnstyle" id="weakness" onclick="myfunction('weakness',4)">Run</button>
+            <span class="details"></span>
+            <br><br>
+            <span>>>> &nbsp;print(shivangi.internship);</span>
+            <button class="btnstyle" id="internship" onclick="myfunction('internship',5)">Run</button>
+            <span class="details"></span>
+            <br><br>
+            <span>>>> &nbsp;print(shivangi.pastime);</span>
+            <button class="btnstyle" id="pastime" onclick="myfunction('pastime',6)">Run</button>
+            <span class="details"></span>
+        </div>
+    </section>
+    <section class="education" id="education">
+        <div class="title">
+            <h1></h1>
+        </div>
+        <div style="text-align: center; font-weight: 900; font-size: 18px;">“The learning process continues until the
+            day you die.”</div>
+
+        <div class="timeline">
+            <div class="timeline-content">
+                <div class="timelineIcon">
+                    <i class="fa fa-book"></i>
+                </div>
+                <div class="education-info even">
+                    <h4><span>High School </span><small> 2014-2015 </small></h4>
+                    <p><span class="comma">“</span>One of the time-span in which the family supported me at their top
+                        level & encouraged also to do
+                        my
+                        best.<span class="comma">”</span></p>
+                </div>
+            </div>
+
+            <div class="timeline-content">
+                <div class="timelineIcon">
+                    <i class="fa fa-flask"></i>
+                </div>
+                <div class="education-info odd">
+                    <h4><span> Intermediate </span><small> 2016-2017 </small></h4>
+                    <p><span class="comma">“</span>Still remember, that I was not much happy with my result at
+                        result-declaration.<span class="comma">”</span></p>
+                </div>
+            </div>
+
+            <div class="timeline-content">
+                <div class="timelineIcon">
+                    <i class="fa fa-graduation-cap"></i>
+                </div>
+                <div class="education-info even">
+                    <h4><span> Graduation </span> <small> 2017-2021 </small></h4>
+                    <p><span class="comma">“</span>This timeline had made me learnt enough how to be self-dependent.
+                        More up & downs came in my
+                        life,
+                        still much to do & more to learn.<span class="comma">”</span></p>
+                </div>
+            </div>
+
+            <div class="timeline-content">
+                <div class="timelineIcon">
+                    <i class="fa fa-user-o"></i>
+                </div>
+                <div class="education-info odd">
+                    <h4><span> Self-Employed <small> 2021 Onwards </small></h4>
+                    <p><span class="comma">“</span>Hence expecting that in this time-interval, I might be doing exact
+                        what I had wanted always!<span class="comma">”</span></p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="skills" id="skills">
         <div class="title">
             <h1>My Skills</h1>
         </div>
         <div class="skills-content">
-            
+
             <div class="column left">
                 <div class="bars">
                     <div class="info">
                         <span>HTML</span>
-                        <span>90%</span>
+                        <span>95%</span>
                     </div>
                     <div class="line html">
                     </div>
@@ -102,9 +237,17 @@
                 <div class="bars">
                     <div class="info">
                         <span>CSS</span>
-                        <span>70%</span>
+                        <span>75%</span>
                     </div>
                     <div class="line css">
+                    </div>
+                </div>
+                <div class="bars">
+                    <div class="info">
+                        <span>Bootstrap</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="line bstrap">
                     </div>
                 </div>
                 <div class="bars">
@@ -128,7 +271,7 @@
                         <span>Python</span>
                         <span>65%</span>
                     </div>
-                    <div class="line mysql">
+                    <div class="line py">
                     </div>
                 </div>
             </div>
@@ -136,12 +279,14 @@
                 <div class="text">
                     My Skills & Knowledge Towards Web Development</div>
                 <p>
-                    As I'm interested in web development so I've the knowledge of HTML, CSS & Bootstrap framework as well.
-                In the back-end development, I keep the knowledge in JavaScript as well as PHP. Besides this, I prefer python 
-                language towards development of various applications & programming.</p>
+                    As I'm interested in web development so I've the knowledge of HTML, CSS & Bootstrap framework as
+                    well.
+                    In the back-end development, I keep the knowledge in JavaScript as well as PHP. Besides this, I
+                    prefer python
+                    language towards development of various applications & programming.</p>
             </div>
         </div>
-       
+
     </section>
 
     <!-- --------footer------ -->
@@ -168,10 +313,23 @@
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="main.js"></script>
+    <script src="js/main.js">
+    </script>
+    <script src="js/typing.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -17,6 +17,9 @@
     .first {
       height: 950px;
     }
+    .description{
+      margin-top: 180px;
+    }
   }
   
 @media only screen and (max-width: 767px) {
@@ -76,33 +79,70 @@
   
 .main{
   background-image: linear-gradient(to left, #ffffff 65%, #c2f6ef 35%);
-  height: 1000px;
+  height: 1020px;
 }
 .main .textside{
   padding-bottom: 20px;
 }
 .skills-content{
-  height: 550px;
+  height: 560px;
   background-image: linear-gradient(to right, #ffffff 65%, #c2f6ef 35%);
 }
 }
 
 @media only screen and (max-width: 460px){  
-  main{
-    height: 1040px;
+  .main{
+    height: 1200px;
     background-image: linear-gradient(to left, #ffffff 65%, #c2f6ef 35%);
+      }
+    .main .textside{
+          padding-left: 20px;
+      }
+      .img{
+        height:390px; 
+        width:390px;
+      }
+   .img:hover{
+       height: 395px;
+       width: 395px;
+   }
+      .textside p{
+          text-align: left;
+          font-size: 18px;
+      }
+      .description{
+        margin-top: 60px;
+      }
+      .aboutInfo span{
+        padding: 10px 0 10px 5px;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+      }
+      .aboutInfo .btnstyle{
+        margin: 0 8px;
+        padding: 3px 12px;
+      }
+      .aboutInfo .details span{
+        font-size: 15px;
+    }
+      .skills{
+          height: 740px;
       }
       .skills-content{
         flex-direction: column;
+        height: 620px;
       }
       .skills .skills-content .right .text{
-        font-size: 19px;
+        font-size: 28px;
     }
+    .skills .skills-content .right p{
+      font-size: 18px;
+  }
       
   }
   @media only screen and (max-width:400px){
-      main{
-          height: 1100px;
+      .main{
+          height: 1230px;
       }
       .textside p{
         text-align: left;
@@ -110,19 +150,41 @@
       .picarea{
         margin-top: 40px;
       }
+      .img{
+        height:360px; 
+        width:360px;
+      }
+   .img:hover{
+       height: 365px;
+       width: 365px;
+   }
+      .description{
+        margin-top: 90px;
+      }
+      .aboutInfo span{
+        padding: 10px 0 10px 3px;
+        font-size: 15px;
+      }
+      .aboutInfo .btnstyle{
+        margin: 0 5px;
+        padding: 3px 11px;
+      }
+      .aboutInfo .details span{
+        font-size: 14.5px;
+    }
       .skills .skills-content .left{
-        padding-top: 100px;
+        padding-top: 60px;
       }
       .skills{
-        height: 700px;
+        height: 760px;
       }
       .skills .skills-content{
-        height: 550px;
+        height: 640px;
       }
   }
   @media only screen and (max-width:360px){
-    main{
-        height: 1120px;
+    .main{
+        height: 1260px;
     }
     .textside p{
       text-align: left;
@@ -130,25 +192,129 @@
     .picarea{
       margin-top: 40px;
     }
+    .aboutInfo span{
+      padding: 10px 0 10px 0;
+      font-size: 15px;
+    }
+    .aboutInfo .btnstyle{
+      margin: 0 3px;
+      padding: 3px 10px;
+    }
     .skills .skills-content .left{
-      padding-top: 150px;
+      padding-top: 100px;
     }
     .skills{
-      height: 710px;
+      height: 860px;
     }
     .skills .skills-content{
-      height: 590px;
+      height: 670px;
     }
 }
 @media only screen and(max-width:340px){
   .main{
-    height: 1150px;
+    height: 1310px;
   }
   .skills{
-    height: 800px;
+    height: 870px;
   }
   .skills .skills-content{
-    height: 630px;
+    height: 700px;
   }
+}
+@media only screen and (max-width:1200px){
+  .even{
+    margin-left:18%;
+  }
+  .odd{
+    margin-left:55%
+  }
+}
+@media only screen and (max-width:930px){
+  .timelineIcon{
+    left: 46.5%;
+  }
+  .even{
+    margin-left:12%;
+  }
+  .odd{
+    margin-left:56%;
+  }
+}
+@media only screen and (max-width:770px){
+  .timelineIcon{
+    left: 45.69%;
+  }
+  .even{
+    margin-left:4%;
+  }
+  .odd{
+    margin-left:56%;
+  }
+}
+@media only screen and (max-width:660px){
+  .timelineIcon{
+    left: 45%;
+  }
+  .education-info{
+    max-width: 230px;
+  }
+ .even{
+   margin-left: 8%;
+ }
+ .odd{
+  margin-left:58%;
+}
+}
+@media only screen and (max-width:450px){
+  .timelineIcon{
+    left: 43%;
+  }
+  .education-info{
+    max-width: 165px;
+  }
+  .timeline-content:before{
+    top: 18%;
+  }
+ .even{
+   margin-left: 4%;
+ }
+ .odd{
+   margin-left: 60%;
+ }
+
+}
+@media only screen and (max-width:420px){
+  .timelineIcon{
+    left: 42%;
+  }
+  .education-info{
+    max-width: 155px;
+  }
+ .even{
+   margin-left: 2%;
+ }
+ .odd{
+   margin-left: 61%;
+ }
+
+}
+@media only screen and (max-width:390px){
+  .timelineIcon{
+    left: 8.55%;
+  }
+  .timeline-content:before{
+    left: 17%;
+  }
+  .education-info{
+    max-width: 220px;
+  }
+ .even{
+   margin-left: 30%;
+   border-radius: 0px 20px 20px 20px;
+ }
+ .odd{
+   margin-left: 30%;
+ }
+
 }
 
