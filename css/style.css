@@ -158,7 +158,6 @@ body{
     font-size: 25px;
 }
 .aboutInfo{
-    /* margin: 10px; */
     padding: 10px;
     background-color: #474747;
     height: 400px;
@@ -180,13 +179,13 @@ body{
   /* Track */
   .aboutInfo::-webkit-scrollbar-track {
     background: #666666;
-    border-radius: 15px;
+    border-radius: 25px;
   }
   
   /* Handle */
   .aboutInfo::-webkit-scrollbar-thumb {
       border-radius: 15px;
-    background:  rgb(148, 148, 148);
+    background: rgb(148, 148, 148);
   }
   
   /* Handle on hover */
@@ -227,7 +226,6 @@ body{
   }
 .timeline-content {
     position: relative;
-    padding: 5px 0;
   }
   .timeline-content:last-child:before {
     height: 0;
